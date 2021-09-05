@@ -1,0 +1,102 @@
+@media (max-width: 1200px) {
+    .header {
+        justify-content: space-around;
+    }
+    .promo {
+        &__wrapper{
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        &__header {
+            font-size: 39px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 160px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 34px;
+        }
+        &__subheader {
+            font-size: 19px;
+        }
+    }
+    .button {
+        &__main {
+            width: 245px;
+            font-size: 14px;
+        }
+    }
+
+    .advantage {
+        &__subheader {
+            font-size: 25px;
+        }
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+} 
+
+@media (max-width: 575px) {
+    .header {
+        flex-wrap: wrap;
+        &__logo{
+            width: 220px;
+        }
+        &__official {
+            display: none;
+        }
+        &__contacts {
+            align-items: center;
+            font-size: 17px;
+        }
+    }
+    .promo {
+        padding-bottom: 49px;
+        &__header {
+            font-size: 23px;
+        }
+        &__subheader {
+            font-size: 12px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            width: 0px;
+        }
+        &__icon {
+            margin-bottom: 30px;
+        }
+    }
+    .button {
+        &__main {
+            width: 200px;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+    }
+    .advantage {
+        &__subheader {
+            font-size: 22px;
+        }
+    }    
+}
