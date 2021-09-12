@@ -31,6 +31,16 @@
             margin-right: auto;
         }
     }
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 680px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }    
+    }   
     
 }
 
@@ -70,7 +80,17 @@
             display: block;
             font-size: 33px;
         }
-    }    
+    } 
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 550px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }    
+    }   
 } 
 
 @media (max-width: 575px) {
@@ -140,4 +160,14 @@
             }
         }    
     }
+    .carousel {
+        &__inner {
+            position: relative;
+            width: 350px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }    
+    }   
 }    
