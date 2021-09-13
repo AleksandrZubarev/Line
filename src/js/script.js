@@ -7,18 +7,21 @@ $(document).ready(function(){
             {
                 breakpoint: 992,
                 settings: {
+                    dots: true,
                     arrows: false
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
+                    dots: true,
                     arrows: false
                 }
             },
             {
                 breakpoint: 576,
                 settings: {
+                    dots: true,
                     arrows: false
                 }
             }
