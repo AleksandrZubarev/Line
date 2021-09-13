@@ -4,4 +4,11 @@
     text-transform: uppercase;
     color: #ffffff;
     text-align: left;
+    &__cat {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #0d0d0d;
+        text-align: center;
+    }
 }
