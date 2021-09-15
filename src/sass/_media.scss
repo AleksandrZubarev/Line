@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .header {
         justify-content: space-around;
     }
@@ -67,6 +71,16 @@
             }    
         }   
     }
+    .catalog {
+        &__content {
+            &_active {
+                justify-content: center;
+            }
+        }
+        &-item {
+            margin-right: 20px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -119,6 +133,10 @@
 } 
 
 @media (max-width: 575px) {
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .header {
         flex-wrap: wrap;
         &__logo{
@@ -185,6 +203,11 @@
             }
         }    
     }
+    .title {
+        &__cat {
+            font-size: 24px;
+        }
+    }
     .carousel {
         &__inner {
             position: relative;
@@ -193,6 +216,17 @@
                 display: block;
                 width: 100%;
             }
+            .slick-dots {
+                padding-left: 0;
+            }
         }    
+    }
+    .catalog {
+        &__tab {
+            width: 100px;
+            font-size: 10px;
+            margin: 0;
+        }
+        
     }   
 }    
