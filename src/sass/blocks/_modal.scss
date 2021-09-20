@@ -54,6 +54,13 @@
         min-height: 140px;
         padding: 38px 75px 40px 82px;
     }
+    .error {
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+    input.error {
+        border: solid 1px red;
+    }
 }
 
 #consultation, #order, #thanks {

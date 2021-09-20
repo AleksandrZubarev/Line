@@ -8,4 +8,12 @@
         color: #ffffff;
         margin-top: 81px;
     }
+    .error {
+        color: #fff;
+        margin-bottom: 13px;
+        font-size: 13px;
+    }
+    input.error {
+        border: solid 1px red;
+    }
 }
