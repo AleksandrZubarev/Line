@@ -22,6 +22,11 @@
             font-size: 22px;
         }
     }
+    .advantage {
+        &__ic {
+            font-size: 13px;
+        }
+    }
     .consultation {
         .title {
             display: block;
@@ -81,6 +86,20 @@
             margin-right: 20px;
         }
     }
+    .footer {
+        &__info {
+            width: 380px;
+            height: 215px;
+            padding: 20px;
+        }
+        &__adre {
+            font-size: 18px;
+            text-align: center;
+        }
+        &__phone {
+            font-size: 19px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -102,6 +121,9 @@
             width: 245px;
             font-size: 14px;
         }
+        &_mini {
+            width: 80px;
+        }
     }
 
     .advantage {
@@ -113,14 +135,24 @@
             flex-direction: column;
             align-items: center;
         }
+        &__ic {
+            margin-bottom: 30px;
+            span {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
     }
     .consultation {
         .title {
             display: block;
-            font-size: 33px;
+            font-size: 31px;
         }
     } 
     .carousel {
+        .container {
+            padding: 0;
+        }
         &__inner {
             position: relative;
             width: 550px;
@@ -129,6 +161,37 @@
                 width: 100%;
             }
         }    
+    }
+    .catalog {
+        &__tab{
+          font-size: 17px;  
+        }
+        &__content {
+            
+            .catalog-item {
+                width: 230px;
+                min-height: 400px;
+                padding: 10px;
+                &__img {
+                   height: 170px; 
+                }
+                &__subtitle {
+                    font-size: 15px;
+                    margin-top: 15px;
+                }
+                &__descr {
+                    margin-top: 10px;
+                }
+                &__wrapper {
+                    width: calc(200% + 20px);
+                }
+                &__list{
+                    li {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
     }   
 } 
 
