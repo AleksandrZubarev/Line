@@ -166,32 +166,32 @@
         &__tab{
           font-size: 17px;  
         }
-        &__content {
-            
-            .catalog-item {
-                width: 230px;
-                min-height: 400px;
-                padding: 10px;
-                &__img {
-                   height: 170px; 
-                }
-                &__subtitle {
-                    font-size: 15px;
-                    margin-top: 15px;
-                }
-                &__descr {
-                    margin-top: 10px;
-                }
-                &__wrapper {
-                    width: calc(200% + 20px);
-                }
-                &__list{
-                    li {
-                        font-size: 13px;
-                    }
+        &-item {
+            width: 230px;
+            min-height: 400px;
+            padding: 10px;
+            &__img {
+               height: 170px; 
+            }
+            &__subtitle {
+                font-size: 15px;
+                margin-top: 15px;
+            }
+            &__descr {
+                margin-top: 10px;
+            }
+            &__wrapper {
+                width: calc(200% + 20px);
+            }
+            &__list{
+                li {
+                    font-size: 13px;
                 }
             }
         }
+            
+            
+        
     }   
 } 
 
@@ -264,6 +264,10 @@
             &__submit {
                 font-size: 15px;
             }
+            &_mini {
+                width: 50px;
+                font-size: 10px;
+            }
         }    
     }
     .title {
@@ -285,11 +289,115 @@
         }    
     }
     .catalog {
+        .container {
+            padding: 0 10px;
+        }
         &__tab {
             width: 100px;
             font-size: 10px;
             margin: 0;
         }
+        &-item {
+            width: 150px;
+            min-height: 300px;
+            padding: 10px;
+            &__img {
+               height: 100px; 
+            }
+            &__subtitle {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 10px;
+                line-height: 1em;
+            }
+            &__wrapper {
+                width: calc(200% + 20px);
+            }
+            &__link {
+                font-size: 12px;
+            }
+            &__back {
+                font-size: 12px;
+            }
+            &__content {
+                padding-right: 3px;
+                &_active {
+                    margin-right: 10px;
+                }
+            }
+            &__list{
+                margin-left: 10px;
+                &_active {
+                    margin-left: 0;
+                }
+                li {
+                    font-size: 8px;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            &__old-price {
+                font-size: 11px;
+            }
+            &__price {
+                font-size: 14px;
+                line-height: 1em;
+            }
+            
+        }    
+            
+            
         
-    }   
+    }
+    .reviews {
+        .container {
+            padding: 0 10px;
+        }
+        &__photo {
+            margin-right: 30px;
+            img {
+                display: block;
+                width: 109px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 290px;
+            height: 160px;
+            padding: 5px;
+        }
+        &__adre {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        &__social-item {
+            img {
+                display: block;
+                width: 40px;
+            }
+        }
+    }
+    .overlay {
+        .modal {
+            width: 350px;
+            &__close {
+                right: -2px;
+                top: -30px;
+            }
+        }
+    } 
+    .feed-form {
+        width: 270px;
+    }  
 }    
