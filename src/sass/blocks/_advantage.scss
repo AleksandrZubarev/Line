@@ -37,4 +37,10 @@
             color: #ff0000;
         }
     }
+    &__icon {
+        animation-name: heartbeat;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
 }

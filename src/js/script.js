@@ -113,4 +113,27 @@ $(document).ready(function(){
         });
         return false;  
     });
+
+    //scroll
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $('a[href^="#"').on('click', function() {
+
+        let href = $(this).attr('href');
+    
+        $('html, body').animate({
+            scrollTop: $(href).offset().top+"px"},
+            {
+                duration: 600,   // по умолчанию «400» 
+                easing: "swing" // по умолчанию «swing» 
+            });
+        return false;
+    });
 })
