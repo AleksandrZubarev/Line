@@ -124,16 +124,18 @@ $(document).ready(function(){
         }
     });
 
-    $('a[href^="#"').on('click', function() {
+    $('a[href^="#"]').on('click', function() {
 
         let href = $(this).attr('href');
     
         $('html, body').animate({
             scrollTop: $(href).offset().top+"px"},
             {
-                duration: 600,   // по умолчанию «400» 
+                duration: 100,   // по умолчанию «400» 
                 easing: "swing" // по умолчанию «swing» 
             });
         return false;
     });
+
+    new WOW().init();
 })
