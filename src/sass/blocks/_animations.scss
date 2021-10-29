@@ -9,3 +9,12 @@
         transform: scale(1);
     }
 }
+
+@keyframes pil {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
